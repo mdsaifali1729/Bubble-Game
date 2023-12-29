@@ -4,6 +4,7 @@ let hitrn;
 
 function scoreincrease(){
     score+=10;
+    document.querySelector('#score').textContent=score;
 }
 
 function getNewHit(){
@@ -40,7 +41,6 @@ document.querySelector('.botcon').addEventListener("click",function(dets){
         scoreincrease();
         makebubble();
         getNewHit();
-        console.log("hello");
       }
       
 });
